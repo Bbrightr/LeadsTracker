@@ -1,3 +1,19 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-app.js"
+import { getDatabase } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-database.js"
+
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.3.1/firebase-analytics.js"
+
+const firebaseConfig = {
+   databaseURL: "https://read-later-app-af957-default-rtdb.europe-west1.firebasedatabase.app/"
+}
+
+const app = initializeApp(firebaseConfig)
+const database = getDatabase(app)
+// const analytics = getAnalytics(app)
+// console.log(database)
+
+
+
 let myLeads = []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
